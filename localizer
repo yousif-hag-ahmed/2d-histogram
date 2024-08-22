@@ -6,9 +6,7 @@
 	correctly implementing the "initialize_beliefs", 
 	"sense", and "move" functions.
 
-	This file is incomplete! Your job is to make these
-	functions work. Feel free to look at localizer.py 
-	for working implementations which are written in python.
+
 */
 
 #include "localizer.h"
@@ -19,7 +17,7 @@
 using namespace std;
 
 /**
-	TODO - implement this function 
+
     
     Initializes a grid of beliefs to a uniform distribution. 
 
@@ -42,7 +40,7 @@ using namespace std;
 vector< vector <float> > initialize_beliefs(vector< vector <char> > grid) {
 	
 
-	// your code here
+
    int rows = grid.size();
   int colms = grid[0].size();
    vector< vector<float> > newGrid (rows, vector <float> (colms,0));
@@ -59,7 +57,7 @@ vector< vector <float> > initialize_beliefs(vector< vector <char> > grid) {
 }
 
 /**
-  TODO - implement this function 
+
     
     Implements robot motion by updating beliefs based on the 
     intended dx and dy of the robot. 
@@ -102,7 +100,7 @@ vector< vector <float> > move(int dy, int dx,
 
 
 
-  // your code here
+
    
     int rows = beliefs.size();
   int colms = beliefs[0].size();
@@ -124,7 +122,7 @@ vector< vector <float> > move(int dy, int dx,
 
 
 /**
-	TODO - implement this function 
+
     
     Implements robot sensing by updating beliefs based on the 
     color of a sensor measurement 
@@ -168,7 +166,7 @@ vector< vector <float> > sense(char color,
 {
 	
 
-	// your code here
+
       int rows = beliefs.size();
   int colms = beliefs[0].size();
    vector< vector<float> > newGrid (rows, vector <float> (colms,0));
